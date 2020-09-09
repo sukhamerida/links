@@ -1,0 +1,50 @@
+{{ define "body" }}
+  <section class="hero is-fullheight">
+    <div class="background"></div>
+
+    <div class="hero-body">
+      <div class="container">
+        <nav class="panel">
+          <div class="panel-heading has-text-centered">
+            <h1>{{ .Site.Params.name }}</h1>
+          </div>
+
+          {{ range .Site.Params.links }}
+            <a href="{{ .url | safeURL }}" class="panel-block"
+               {{ with .label }}title="{{ . }}"{{ end }}
+
+               {{ if eq .mode "external" }}
+                 target="_blank"
+                 rel="noopener noreferrer"
+               {{ end }}>
+
+              <span class="panel-icon">
+                <i aria-hidden="true">
+                  {{ readFile .icon | safeHTML }}
+                </i>
+              </span>
+
+              {{ .text | default .url }}
+            </a>
+          {{ end }}
+
+          <footer class="panel-footer has-text-centered">
+            <div>
+              Powered by
+              <a href="https://gohugo.io">Hugo</a>,
+              <a href="https://bulma.io">Bulma</a>,
+              <a href="https://fontawesome.com">FontAwesome</a>
+            </div>
+
+            <div class="copyright">
+              Copyright &copy; {{ .Site.Params.copyright }}
+            </div>
+          </footer>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "privacy.tmpl" . }}
+{{ end }}
+

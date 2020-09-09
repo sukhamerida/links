@@ -1,0 +1,122 @@
+baseURL: https://links.sukhamerida.com/
+title: Sukha Mérida
+params:
+  name: Sukha Mérida
+  titleSeparator: "-"
+  copyright: Sukha Mérida 2020
+  author:
+    name: Sukha Mérida
+    email: info@sukhamerida.com
+    website: https://sukhamerida.com/
+  image: /favicon-512x512.png
+  googleTagManager: GTM-NZ2R3W7
+  # disqus: sukhamerida-links
+  # interledger: "$ilp.uphold.com/YM4XLxrdPh44"
+defaultContentLanguage: es
+defaultContentLanguageInSubdir: true
+languages:
+  en:
+    languageName: English
+    params:
+      title: Links
+      description: If your are looking for Sukha Mérida, you are in the right place.
+      links:
+        - label: Website
+          text: sukhamerida.com
+          url: https://sukhamerida.com/en/
+          icon: /static/uploads/fa-globe.svg
+        - label: Instagram
+          text: "@sukhamerida"
+          url: https://instagram.com/sukhamerida/
+          icon: /static/uploads/fa-instagram.svg
+          mode: external
+        - label: Facebook
+          text: Sukha Mérida
+          url: https://facebook.com/sukhamerida/
+          icon: /static/uploads/fa-facebook.svg
+          mode: external
+        - label: Telegram
+          text: Sukha Mérida
+          url: https://t.me/sukhamerida
+          icon: /static/uploads/fa-telegram.svg
+          mode: external
+        - label: Whatsapp
+          text: Sukha Mérida
+          url: https://wa.me/584247456041
+          icon: /static/uploads/fa-whatsapp.svg
+          mode: external
+        - label: Email
+          text: info@sukhamerida.com
+          url: mailto://info@sukhamerida.com
+          icon: /static/uploads/fa-envelope.svg
+        - label: Phone
+          text: +58 424 7456041
+          url: tel://+584247456041
+          icon: /static/uploads/fa-phone-square.svg
+  es:
+    languageName: Español
+    params:
+      title: Enlaces
+      description: Si estás buscando información acerca de Sukha Mérida, este es el lugar indicado.
+      links:
+        - label: Sitio web
+          text: sukhamerida.com
+          url: https://sukhamerida.com/es/
+          icon: /static/uploads/fa-globe.svg
+        - label: Instagram
+          text: "@sukhamerida"
+          url: https://instagram.com/sukhamerida/
+          icon: /static/uploads/fa-instagram.svg
+          mode: external
+        - label: Facebook
+          text: Sukha Mérida
+          url: https://facebook.com/sukhamerida/
+          icon: /static/uploads/fa-facebook.svg
+          mode: external
+        - label: Telegram
+          text: Sukha Mérida
+          url: https://t.me/sukhamerida
+          icon: /static/uploads/fa-telegram.svg
+          mode: external
+        - label: Whatsapp
+          text: Sukha Mérida
+          url: https://wa.me/584247456041
+          icon: /static/uploads/fa-whatsapp.svg
+          mode: external
+        - label: Correo electrónico
+          text: info@sukhamerida.com
+          url: mailto://info@sukhamerida.com
+          icon: /static/uploads/fa-envelope.svg
+        - label: Teléfono
+          text: +58 424 7456041
+          url: tel://+584247456041
+          icon: /static/uploads/fa-phone-square.svg
+enableEmoji: true
+markup:
+  highlight:
+    codeFences: true
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: false
+    tabWidth: 2
+  tableOfContents:
+    startLevel: 1
+    endLevel: 6
+  goldmark:
+    renderer:
+      unsafe: true
+enableRobotsTXT: true
+server:
+  headers:
+    - for: /**
+      values:
+        X-Frame-Options: SAMEORIGIN
+        X-Content-Type-Options: nosniff
+        X-XSS-Protection: 1; mode=block
+        Referrer-Policy: strict-origin-when-cross-origin
+    - for: /*.webmanifest
+      values:
+        Content-Type: application/manifest+json; charset=utf-8
+
