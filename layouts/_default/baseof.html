@@ -21,7 +21,7 @@
   {{ end }}
 
   <title>
-    {{ .Site.Params.title }}
+    {{ $.Param "title" }}
     {{ .Site.Params.titleSeparator }}
     {{ .Site.Params.name }}
   </title>
