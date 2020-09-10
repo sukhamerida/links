@@ -1,7 +1,7 @@
 {{ define "body" }}
-  <section class="hero is-fullheight">
-    <div class="background"></div>
+  <div class="background"></div>
 
+  <section class="hero is-fullheight">
     <div class="hero-body">
       <div class="container">
         <nav class="panel">
@@ -33,11 +33,17 @@
               Powered by
               <a href="https://gohugo.io">Hugo</a>,
               <a href="https://bulma.io">Bulma</a>,
-              <a href="https://fontawesome.com">FontAwesome</a>
+              <a href="https://fontawesome.com">FontAwesome</a>,
+              <a href="https://netlify.com/">Netlify</a>
             </div>
 
             <div class="copyright">
               Copyright &copy; {{ .Site.Params.copyright }}
+            </div>
+
+            <div class="devs">
+              <a target="_blank" rel="noopener noreferrer"
+                 href="https://ntrrg.dev">@ntrrg</a>
             </div>
           </footer>
         </nav>
