@@ -32,7 +32,7 @@ languages:
           mode: external
         - label: Facebook
           text: Sukha Mérida
-          url: https://facebook.com/sukhamerida/
+          url: https://www.facebook.com/Sukha-M%C3%A9rida-115130320320787/
           icon: /static/uploads/fa-facebook.svg
           mode: external
         - label: Telegram
@@ -70,7 +70,7 @@ languages:
           mode: external
         - label: Facebook
           text: Sukha Mérida
-          url: https://facebook.com/sukhamerida/
+          url: https://www.facebook.com/Sukha-M%C3%A9rida-115130320320787/
           icon: /static/uploads/fa-facebook.svg
           mode: external
         - label: Telegram
@@ -91,6 +91,7 @@ languages:
           text: +58 424 7456041
           url: tel://+584247456041
           icon: /static/uploads/fa-phone-square.svg
+taxonomies: []
 enableEmoji: true
 markup:
   highlight:
@@ -108,6 +109,7 @@ markup:
     renderer:
       unsafe: true
 enableRobotsTXT: true
+minify: true
 server:
   headers:
     - for: /**
