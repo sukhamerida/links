@@ -1,4 +1,4 @@
-HUGO_VERSION ?= 0.76.3
+HUGO_VERSION ?= 0.76.5
 HUGO_PORT ?= 1313
 
 .PHONY: all
@@ -7,6 +7,12 @@ all: build
 .PHONY: build
 build:
 	hugo
+
+.PHONY: bump-version-hugo
+bump-version-hugo:
+	@grep -lR "$(HUGO_VERSION)" . | \
+		grep -v "^\./\.git/" | \
+		grep -v "\.swp\$$"
 
 .PHONY: clean
 clean:
@@ -19,13 +25,15 @@ run:
 
 # Docker
 
+DOCKER_IMAGE_TAG := $(HUGO_VERSION)-extended
+
 .PHONY: docker-build
 docker-build:
 	@docker run --rm -it \
 		-u $$(id -u $$USER) \
 		-v "$${TMPDIR:-/tmp}":/tmp/ \
 		-v "$$PWD":/site/ \
-		ntrrg/hugo:$(HUGO_VERSION)
+		ntrrg/hugo:$(DOCKER_IMAGE_TAG)
 
 .PHONY: docker-run
 docker-run:
@@ -35,7 +43,7 @@ docker-run:
 		-u $$(id -u $$USER) \
 		-v "$${TMPDIR:-/tmp}":/tmp/ \
 		-v "$$PWD":/site/ \
-		ntrrg/hugo:$(HUGO_VERSION) server -DEF --noHTTPCache --i18n-warnings \
+		ntrrg/hugo:$(DOCKER_IMAGE_TAG) server -DEF --noHTTPCache --i18n-warnings \
 			--disableFastRender \
 			--bind 0.0.0.0 --port $(HUGO_PORT) --baseUrl / --appendPort=false
 
@@ -46,5 +54,5 @@ docker-shell:
 		-v "$${TMPDIR:-/tmp}":/tmp/ \
 		-v "$$PWD":/site/ \
 		--entrypoint sh \
-		ntrrg/hugo:$(HUGO_VERSION)
+		ntrrg/hugo:$(DOCKER_IMAGE_TAG)
 
