@@ -5,9 +5,8 @@
   src: url("../fonts/Grandstander/static/Grandstander-Regular.ttf") format("truetype");
 }
 
-$family-primary: "Grandstander", sans-serif;
-$family-secondary: sans-serif;
-
+$body-family: "Grandstander", sans-serif;
+$link: #94904a;
 $body-background-color: #333;
 $body-size: 20px;
 
@@ -30,6 +29,17 @@ $body-size: 20px;
 
 @import "../vendor/bulma/sass/layout/hero.sass";
 @import "../vendor/bulma/sass/elements/container.sass";
+
+// Site image
+
+.site-image {
+  margin-bottom: 1em;
+}
+
+.site-image img {
+  width: 15em;
+  max-width: 80vw;
+}
 
 // Links
 

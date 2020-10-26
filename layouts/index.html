@@ -4,11 +4,12 @@
   <section class="hero is-fullheight">
     <div class="hero-body">
       <div class="container">
-        <nav class="panel">
-          <div class="panel-heading has-text-centered">
-            <h1>{{ .Site.Params.name }}</h1>
-          </div>
+        <div class="site-image has-text-centered">
+          <img src="/uploads/site-image.png"
+               alt="{{ .Site.Params.name }}"/>
+        </div>
 
+        <nav class="panel">
           {{ range .Site.Params.links }}
             <a href="{{ .url | safeURL }}" class="panel-block"
                {{ with .label }}title="{{ . }}"{{ end }}

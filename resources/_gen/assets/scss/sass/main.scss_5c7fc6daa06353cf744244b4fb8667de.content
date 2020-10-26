@@ -209,7 +209,7 @@ body {
   line-height: 1.5; }
 
 a {
-  color: #3273dc;
+  color: #94904a;
   cursor: pointer;
   text-decoration: none; }
   a strong {
@@ -519,7 +519,7 @@ table th {
         .hero.is-primary.is-bold .navbar-menu {
           background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%); } }
   .hero.is-link {
-    background-color: #3273dc;
+    background-color: #94904a;
     color: #fff; }
     .hero.is-link a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
     .hero.is-link strong {
@@ -533,14 +533,14 @@ table th {
         color: #fff; }
     @media screen and (max-width: 1023px) {
       .hero.is-link .navbar-menu {
-        background-color: #3273dc; } }
+        background-color: #94904a; } }
     .hero.is-link .navbar-item,
     .hero.is-link .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
     .hero.is-link a.navbar-item:hover, .hero.is-link a.navbar-item.is-active,
     .hero.is-link .navbar-link:hover,
     .hero.is-link .navbar-link.is-active {
-      background-color: #2366d1;
+      background-color: #837f42;
       color: #fff; }
     .hero.is-link .tabs a {
       color: #fff;
@@ -556,12 +556,12 @@ table th {
     .hero.is-link .tabs.is-boxed li.is-active a, .hero.is-link .tabs.is-boxed li.is-active a:hover, .hero.is-link .tabs.is-toggle li.is-active a, .hero.is-link .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
-      color: #3273dc; }
+      color: #94904a; }
     .hero.is-link.is-bold {
-      background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%); }
+      background-image: linear-gradient(141deg, #7b6a30 0%, #94904a 71%, #a1ab4c 100%); }
       @media screen and (max-width: 768px) {
         .hero.is-link.is-bold .navbar-menu {
-          background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%); } }
+          background-image: linear-gradient(141deg, #7b6a30 0%, #94904a 71%, #a1ab4c 100%); } }
   .hero.is-info {
     background-color: #3298dc;
     color: #fff; }
@@ -819,6 +819,13 @@ table th {
   @media screen and (min-width: 1408px) {
     .container {
       max-width: 1344px; } }
+.site-image {
+  margin-bottom: 1em; }
+
+.site-image img {
+  width: 15em;
+  max-width: 80vw; }
+
 .panel {
   border-radius: 6px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
@@ -861,12 +868,12 @@ table th {
   .panel.is-primary .panel-block.is-active .panel-icon {
     color: #00d1b2; }
   .panel.is-link .panel-heading {
-    background-color: #3273dc;
+    background-color: #94904a;
     color: #fff; }
   .panel.is-link .panel-tabs a.is-active {
-    border-bottom-color: #3273dc; }
+    border-bottom-color: #94904a; }
   .panel.is-link .panel-block.is-active .panel-icon {
-    color: #3273dc; }
+    color: #94904a; }
   .panel.is-info .panel-heading {
     background-color: #3298dc;
     color: #fff; }
@@ -925,7 +932,7 @@ table th {
 .panel-list a {
   color: #4a4a4a; }
   .panel-list a:hover {
-    color: #3273dc; }
+    color: #94904a; }
 
 .panel-block {
   align-items: center;
@@ -942,10 +949,10 @@ table th {
   .panel-block.is-wrapped {
     flex-wrap: wrap; }
   .panel-block.is-active {
-    border-left-color: #3273dc;
+    border-left-color: #94904a;
     color: #363636; }
     .panel-block.is-active .panel-icon {
-      color: #3273dc; }
+      color: #94904a; }
   .panel-block:last-child {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px; }
@@ -1272,10 +1279,10 @@ label.panel-block {
   font-weight: 700 !important; }
 
 .is-family-primary {
-  font-family: "Grandstander", sans-serif !important; }
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
 
 .is-family-secondary {
-  font-family: sans-serif !important; }
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
 
 .is-family-sans-serif {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
@@ -1386,13 +1393,13 @@ label.panel-block {
       border-color: #00d1b2;
       color: #00947e; }
   .message.is-link {
-    background-color: #eef3fc; }
+    background-color: #f8f8f1; }
     .message.is-link .message-header {
-      background-color: #3273dc;
+      background-color: #94904a;
       color: #fff; }
     .message.is-link .message-body {
-      border-color: #3273dc;
-      color: #2160c4; }
+      border-color: #94904a;
+      color: #888444; }
   .message.is-info {
     background-color: #eef6fc; }
     .message.is-info .message-header {
