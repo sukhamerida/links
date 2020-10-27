@@ -1,0 +1,21 @@
+{
+  "name": "sukhamerida-links",
+  "version": "0.1.0",
+  "description": "Landing page with hot links.",
+  "main": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/sukhamerida/links.git"
+  },
+  "author": "Sukha Mérida <info@sukahmerida.com> (https://sukhamerida.com)",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://gitlab.com/sukhamerida/links/-/issues"
+  },
+  "homepage": "https://links.sukhamerida.com",
+  "dependencies": {
+    "bulma": "^0.9.1"
+  },
+  "devDependencies": {}
+}

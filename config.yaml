@@ -11,7 +11,7 @@ params:
   image: /favicon-512x512.png
   googleTagManager: GTM-KPMRMK7
   # disqus: sukhamerida-links
-  # interledger: "$ilp.uphold.com/YM4XLxrdPh44"
+  interledger: "$ilp.uphold.com/YM4XLxrdPh44"
 defaultContentLanguage: es
 defaultContentLanguageInSubdir: true
 languages:
