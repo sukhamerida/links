@@ -24,6 +24,7 @@ $body-size: 20px;
 // Links
 
 $panel-radius: 0px;
+$panel-item-border: 0.25em solid $border-light;
 $panel-block-color: #fff;
 $panel-icon-color: $panel-block-color;
 
@@ -33,7 +34,7 @@ $panel-icon-color: $panel-block-color;
 .panel {
   max-width: 50ex;
 
-  background-color: rgba(#94904a, 1);
+  background-color: rgba(#94904a, 0.8);
   color: $panel-block-color;
 
   margin-right: auto;

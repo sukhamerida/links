@@ -893,7 +893,7 @@ table th {
 
 .panel-tabs:not(:last-child),
 .panel-block:not(:last-child) {
-  border-bottom: 1px solid #ededed; }
+  border-bottom: 0.25em solid #ededed; }
 
 .panel-heading {
   background-color: #ededed;
@@ -1283,7 +1283,7 @@ label.panel-block {
 
 .panel {
   max-width: 50ex;
-  background-color: #94904a;
+  background-color: rgba(148, 144, 74, 0.8);
   color: #fff;
   margin-right: auto;
   margin-left: auto; }
