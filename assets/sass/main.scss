@@ -25,7 +25,7 @@ $body-size: 20px;
 
 $panel-radius: 0px;
 $panel-item-border: 0.25em solid $border-light;
-$panel-block-color: #fff;
+$panel-block-color: $body-color;
 $panel-icon-color: $panel-block-color;
 
 @import "bulma/sass/components/panel.sass";
@@ -34,7 +34,7 @@ $panel-icon-color: $panel-block-color;
 .panel {
   max-width: 50ex;
 
-  background-color: rgba(#94904a, 0.8);
+  background-color: #a3bf76;
   color: $panel-block-color;
 
   margin-right: auto;
