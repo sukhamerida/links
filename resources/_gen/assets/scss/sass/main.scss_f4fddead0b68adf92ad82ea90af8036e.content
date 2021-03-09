@@ -1480,6 +1480,7 @@ label.panel-block:hover .panel-icon {
 
 .privacy-alert {
   width: 100%;
+  margin-bottom: 0em;
   position: fixed;
   left: 0%;
   bottom: 0%; }
