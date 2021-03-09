@@ -6,7 +6,8 @@ _build:
 ---
 
 [Google Cookies]: https://policies.google.com/technologies/cookies
+[Facebook Cookies]: https://www.facebook.com/policies/cookies
 
-This site uses cookies from [Google][Google Cookies] to deliver its services
-and to analyze traffic.
+This site uses cookies from [Google][Google Cookies] and [Facebook][Facebook Cookies]
+to deliver its services and to analyze traffic.
 
